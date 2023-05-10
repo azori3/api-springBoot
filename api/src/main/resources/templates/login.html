@@ -1,0 +1,66 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Please sign in</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+
+
+    body{
+            background-color:#3e3e3e;
+    }
+			@-webkit-keyframes spin {
+				0% { -webkit-transform: rotate(0deg); }
+				100% { -webkit-transform: rotate(360deg); }
+			}
+
+			@keyframes spin {
+				0% { transform: rotate(0deg); }
+				100% { transform: rotate(360deg); }
+			}
+
+			input:-webkit-autofill,
+			input:-webkit-autofill:hover,
+			input:-webkit-autofill:focus{
+			  -webkit-text-fill-color: rgb(255, 255, 255);
+			  transition: background-color 1000s ease-in-out 0s;
+			}
+
+			/* width */
+			::-webkit-scrollbar {
+				width: 4px;
+				border-radius: 24px;
+				color: #7a8084;
+			}
+			/* Track */
+			::-webkit-scrollbar-track {
+				/* background: #f1f1f1;  */
+			}
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+				background: #888;
+			}
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+				background: #555;
+		</style></head>
+<body>
+<div class="container">
+    <form class="form-signin" method="post" action="/login">
+        <h2 class="form-signin-heading">AlisCOde Connecte toi </h2>
+        <p>
+            <label for="username" class="sr-only">Username</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Username" required="" autofocus="">
+        </p>
+        <p>
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
+        </p>
+        <input name="_csrf" type="hidden" value="xXHJ9yeAyKv-OfSOuhyU5V09iZ8MNoFx_7A_A_XAulhzziT0o0evxxLirpvTW5a_jjGg3G0NpP5tD7lcy9ULN8bz3GFL-hzH">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+</div>
+</body></html>
